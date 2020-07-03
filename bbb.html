@@ -80,7 +80,6 @@
 <body>
   <div id="Pic_pass">
     <p style="font-size: 20px;font-weight: bold;">请上传照片 </p>
-    <p><span style="color: red">注：最多可以传3张</span></p>
     <div class="picDiv">
       <div class="addImages">
         <form action="http://ydcg.ylss11.com:8083/scss/user/upImage.do">
@@ -179,6 +178,7 @@
       $.ajax({
         type: 'POST',
         // url: 'http://192.168.1.5:9001/Img/up/1112',
+        url: 'http://ydcg.ylss11.com:8083/scss/user/upImage.do',
         data: params,
         cache: true,
         contentType: false,

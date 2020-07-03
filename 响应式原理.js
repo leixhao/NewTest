@@ -58,6 +58,7 @@ function observer(value){
 
 class Vue{
   constructor(options){
+    console.log(this._data)
     this._data = options.data;
     observer(this._data)
     // 新建一个watcher观察者对象，这个时候观察者中的Dep会指向这个Watcher对象
